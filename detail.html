@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/pokemon.js" defer></script>
+  </head>
+  <body>
+    <main class="detail-main main">
+      <!-- Header section -->
+      <header class="header-detail">
+        <div class="header-detail-wrapper">
+          <div class="header-detail-left">
+            <a href="./index.html" class="back-btn-wrap">
+              <img src="./img/back-to-home.svg" alt="back to home" class="back-btn" id="back-btn" />
+              <span class="back-text">Back to List</span>
+            </a>
+          </div>
+          <div class="header-detail-center">
+            <h1 class="pokemon-name"></h1>
+            <p class="pokemon-id body2-fonts"></p>
+          </div>
+          <div class="header-detail-right">
+            <!-- Navigation arrows -->
+            <a href="#" class="nav-arrow" id="leftArrow" title="Previous Pokemon">
+              <img src="./img/chevron_left.svg" alt="previous" />
+            </a>
+            <a href="#" class="nav-arrow" id="rightArrow" title="Next Pokemon">
+              <img src="./img/chevron_right.svg" alt="next" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content area -->
+      <div class="detail-content-wrapper">
+        <!-- Left side: Pokemon image -->
+        <div class="detail-image-section">
+          <div class="pokemon-image-container">
+            <div class="image-background"></div>
+            <img src="" alt="Pokemon" class="pokemon-image" />
+          </div>
+        </div>
+
+        <!-- Right side: Pokemon details -->
+        <div class="detail-info-section">
+          <!-- About section -->
+          <div class="info-card">
+            <h2 class="section-title">About</h2>
+            
+            <div class="pokemon-stats-grid">
+              <div class="stat-item">
+                <img src="./img/weight.svg" alt="weight" class="stat-icon" />
+                <p class="stat-value weight"></p>
+                <p class="stat-label caption-fonts">Weight</p>
+              </div>
+              <div class="stat-item">
+                <img src="./img/height.svg" alt="height" class="stat-icon straighten" />
+                <p class="stat-value height"></p>
+                <p class="stat-label caption-fonts">Height</p>
+              </div>
+              <div class="stat-item">
+                <div class="moves-list move"></div>
+                <p class="stat-label caption-fonts">Moves</p>
+              </div>
+            </div>
+            <p class="pokemon-description body3-fonts"></p>
+          </div>
+
+          <!-- Type badges section - outside the about card -->
+          <div class="type-badges-wrapper">
+            <span class="type-badge grass">Grass</span>
+            <span class="type-badge poison">Poison</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

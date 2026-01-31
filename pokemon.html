@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/pokemon.js" defer></script>
+    <style>
+        html{
+         overflow: hidden;
+        }
+     </style>
+</head>
+<body>
+    <main class="main">
+    <header class="header-home">
+        <div class="container">
+             <!-- Logo Section -->
+            <div class="logo-wrapper">
+                <img src="./img/pokeball.svg" alt="pokeball"/>
+                <h1>Pokepedia</h1>
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-wrapper">
+                <div class="search-wrap">
+                    <img src="./img/search.svg" alt="search-con" class="search-icon"/>
+                    <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input"/>
+                    <img src="./img/cross.svg" alt="cross-icon" class="search-close-icon" id="search-close-icon"/>
+                </div>
+            
+            <!-- Sorting and Filtering Options -->
+            <div class="sort-wrapper">
+                <div class="sort-wrap">
+                    <img src="./img/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
+                </div>
+                <div class="filter-wrapper">
+                    <p class ="body2-fonts">Search by:</p>
+                    <div class="filter-wrap">
+                        <div>
+                            <input type="radio" id="number" name="filters" value="number" checked>
+                            <label for="number" class="body3-fonts">Number</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="name" name="filters" value="name">
+                            <label for="name" class="body3-fonts">Name</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    
+        <!-- Content Wrapper: Type Buttons and Pokemon List -->
+    <div class="content-wrapper">
+        <div class="type-buttons">
+            <button  data-type="normal" style="background-color: #e2e204;">Normal</button>
+            <button  data-type="fire" style="background-color: #c93116;">Fire</button>
+            <button  data-type="water"style="background-color: #0875e3;">Water</button>
+            <button  data-type="fairy" style="background-color: #c888c1">Fairy</button>
+            <button  data-type="grass" style="background-color: #63b244;">Grass</button>
+            <button  data-type="electric" style="background-color: #fbc932;">Electric</button>
+            <button  data-type="dragon" style="background-color: #4a0870;">Dragon</button>
+            <button  data-type="poison" style="background-color: #a40b86;">Poison</button>
+            <button  data-type="ground" style="background-color: #7c692e;">Ground</button>
+            <button  data-type="flying" style="background-color: #697df0;">Flying</button>
+            <button  data-type="rock" style="background-color: #634d07;">Rock</button>
+            <button  data-type="psychic" style="background-color: #ef3e85;">Psychic</button>
+            <button  data-type="bug" style="background-color: #8e970b;">Bug</button>
+            <button  data-type="ice" style="background-color: #0ea3ed;">Ice</button>
+            <button  data-type="ghost" style="background-color: #4b4ba3;">Ghost</button>
+            <button  data-type="dark" style="background-color: #6e4e3f;">Dark</button>
+            <button  data-type="steel" style="background-color: #929292;">Steel</button>
+            <button  data-type="fighting" style="background-color: #aa4431;">Fighting</button>
+            <button data-type="all" id="all" style="background-color: #19e30e ;">Show All</button>
+        </div>
+
+         <!-- Pokemon List Section -->
+        <section class="pokemon-list">
+            <div class="container">
+                <div class="list-wrapper"></div>
+            </div>
+            <div id="not-found-message">Pokemon not found</div>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

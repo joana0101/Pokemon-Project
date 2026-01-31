@@ -1,0 +1,84 @@
+#  Pokepedia - Interactive Pokemon Explorer
+
+A modern web application for browsing and exploring Pokemon using the PokeAPI. 
+
+# Features
+
+## Main Pokemon List
+-*Browse 200 Pokemon* - View the first 200 Pokemon from Generation I-II
+-*Type Filtering* - Filter Pokemon by 18 different types with color-coded buttons
+-*Smart Search* - Search by Pokemon name or number
+-*Dual Search Modes* - Toggle between searching by number or name
+-*Show All Option* - Quick reset to view all Pokemon
+
+## Pokemon Details Page
+-*Pokemon Image* - Animation
+-*Type Badges* - Color-coded type indicators
+-*Quick Stats* - View weight, height, and signature moves
+-*Pokemon Description* - Text from the Pokedex
+-*Navigation* - Easy previous and next Pokemon navigation 
+
+## Design Features
+-*Dark Theme* - Dark gray (#292929) background
+-*Orbitron Font* - Gaming inspired typography
+-*Smooth Animations* - Hover effects, floating images, glowing search bar
+-*Fully Responsive* - Works on desktop, tablet, and mobile
+
+# Technologies Used
+
+-*HTML5* - Semantic markup
+-*CSS3* - Custom styling with animations and responsive design
+-*Vanilla JavaScript* - No frameworks, pure ES6+
+-*PokeAPI* - RESTful Pokemon data API
+
+# Project Structure
+
+```
+PokemonProject/
+├─ pokemon.html              - Main Pokemon list page
+├─ detail.html              - Pokemon detail page
+├─ style.css                - Main stylesheet
+├─ pokemon.js               - Main page JavaScript
+├─ pokemon-detail.js        - Detail page JavaScript
+└─ images/                  - UI icons and assets
+    ├─ pokeball.svg
+    ├─ search.svg
+    ├─ sorting.svg
+    ├─ cross.svg
+    ├─ back-to-home.svg
+    ├─ chevron_left.svg
+    ├─ chevron_right.svg
+    ├─ weight.svg
+    └─ height.svg
+```
+##  API Integration
+
+This project uses the [PokeAPI](https://pokeapi.co/) for all Pokemon data:
+
+*Endpoints Used:**
+-`https://pokeapi.co/api/v2/pokemon?limit=200` - List of 200 Pokemon
+-`https://pokeapi.co/api/v2/pokemon/{id}` - Individual Pokemon data
+-`https://pokeapi.co/api/v2/pokemon-species/{id}` - Pokemon descriptions
+-`https://pokeapi.co/api/v2/type/{type}` - Pokemon by type
+
+*Data Retrieved:*
+- Pokemon sprites (Dream World, Official Artwork)
+- Stats (weight, height, moves)
+- Types and type colors
+- Pokedex flavor text
+- Pokemon abilities and characteristics
+
+
+# Future Enhancements
+
+- [ ] Evolution chain visualization
+- [x] Filter the pokemons by their type
+- [ ] Compare two Pokemon side-by-side
+- [ ] Favorite/bookmark Pokemon
+- [ ] Dark/light theme toggle
+- [ ] Generation filtering
+- [ ] Shiny sprite toggle
+
+---
+
+**Gotta catch 'em all!** 
